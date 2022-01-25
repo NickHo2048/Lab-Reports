@@ -31,7 +31,6 @@ First download ssh-add from this [Link](https://docs.microsoft.com/en-us/windows
 
 ## Step 7: Optimizing Remote Running
 Because of step 6, we do not have to ssh into our cse15 constantly to run commands anymore; we can simply type ssh cs15l...@ieng6.ucsd.edu "[insert command]"; to make things more efficient, you can use the up and down arrows to reuse commands; copying and pasting is also very helpful
-\
-For example, in this picture, I used the arrows to get the ssh command (+3), then I typed "ls" (+4), and then copy-pasted my password (+6)); this resulted in a total of 13 strokes. 
 ![OptimizingPicture](Optimizing.png)
+For example, in this picture, I used the arrows to get the ssh command (+3), then I typed "ls" (+4), and then copy-pasted my password (+6)); this resulted in a total of 13 strokes. 
 
