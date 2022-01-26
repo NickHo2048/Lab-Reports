@@ -9,7 +9,7 @@ Download Visual Studio Code from this [Link](https://code.visualstudio.com/Downl
 
 
 ## Step 3: Remotely Connecting
-Type `SSH cs15l...@ieng6.ucsd.edu` on your computer; then enter your password. 
+Type `ssh cs15l...@ieng6.ucsd.edu` on your computer; then enter your password. 
 ![RemoteConnectPicture](RemoteConnection.png)
 
 
@@ -25,7 +25,7 @@ Create some file; in the example, we created a java file that printed out "os.na
 
 
 ## Step 6: Setting an SSH Key
-First download ssh-add from this [Link](https://docs.microsoft.com/en-us/windows-server/administration/openssh/openssh_keymanagement#user-key-generation); then type out `ssh-keygen` on your computer; then type `[the location of the download] .ssh/id_rsa file` when prompted for a file to save the key, then press enter two times as no passphrase is needed; now `ssh cs15l...account`; type `mkdir .ssh` on that computer; then return to your computer and type `scp [insert location of .ssh/id_rsa.pub file] cs15l...@ieng6.ucsd.edu:~/.ssh/authorized_keys`
+First download ssh-add from this [Link](https://docs.microsoft.com/en-us/windows-server/administration/openssh/openssh_keymanagement#user-key-generation); then type out `ssh-keygen` on your computer; then type `[the location of the download].ssh/id_rsa file` when prompted for a file to save the key, then press enter two times as no passphrase is needed; now `ssh cs15l...account`; type `mkdir .ssh` on that computer; then return to your computer and type `scp [insert location of .ssh/id_rsa.pub file] cs15l...@ieng6.ucsd.edu:~/.ssh/authorized_keys`
 ![keygenPicture](keygen.png)
 
 
