@@ -30,8 +30,7 @@ public class MarkdownParse {
         System.out.println(links);
         }
         catch(Exception e){
-            System.out.println(e.toString());
-            return;
+            System.out.println(e.toString() + "\nPlease try");
         }
 	    
     }
