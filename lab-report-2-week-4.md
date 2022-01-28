@@ -3,7 +3,7 @@
 ![OriginalCodePicture](OG.png)
 ##### First Error
 ![Test1ErrorPic](Test2Error.png)
-The original code finds the hard brackets and then finds the link between the paranthesis after those brackets; however, we get an **our first test** when no file containing links is passed.
+The original code finds the hard brackets and then finds the link between the paranthesis after those brackets; however, we get **our first test** when no file containing links is passed.
 We get an IndexOutofBoundsException that must be resolved. 
 
 ## Updated to Account for Test 1
