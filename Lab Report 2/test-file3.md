@@ -1,1 +1,1 @@
-[a link (to a website)](https://something.com)
+[a link](to a website)(https://something.com)
