@@ -1,4 +1,4 @@
-## Streamlining ssh Configuration
+## Streamlining SSH Configuration
 
 ##### Step 1:
 Ensure ssh key is setup. **See Lab 1  (Setting an SSH Key)** Open VSCode and open the .ssh file. Create a new file and name it config. 
