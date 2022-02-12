@@ -13,5 +13,5 @@ Check to make sure the streamlining process worked.
 ![CheckingSSH](LastHope2.png)
 
 ##### Step 4:
-Use the ssh streamlining process by copying over a file. `Type scp [file location] [insert name]:~/`
+Use the ssh streamlining process by copying over a file. Type `scp [file location] [insert name]:~/`
 ![UsingStreamliningProcess](LastHope3.png)
