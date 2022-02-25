@@ -1,11 +1,11 @@
 {
     "java.project.referencedLibraries": {
         "include": [
-            "libs/**/*.jar",
+            "lib/**/*.jar",
             "/Users/mijia/Desktop/CSE12/junit-4.13.2.jar"
         ],
         "exclude": [
-            "libs/junit-4.13.2.jar"
+            "lib/junit-4.13.2.jar"
         ]
     }
 }
