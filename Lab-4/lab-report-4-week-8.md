@@ -25,3 +25,6 @@ What snippet3 should produce: ("https://www.twitter.com","https://ucsd-cse15l-w2
 ![Test_for_snippet3](therepo3.png)
 ##### Result when tests are run
 ![Result](theirrepo.png)
+
+
+## Answers to Questions:
