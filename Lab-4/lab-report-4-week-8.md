@@ -40,7 +40,12 @@ It found a.com and example.com. This is because the code was triggered by the br
 Now, the code only looks for the close Bracket and then checks for the paranthesis afterward. However, if there are paranthesis within the link, it will keep shifting the close paranthesis down until it finds the last paranthesis. 
 
 ##### Question 3: 
-It didn't find any of the links. This is because we divide the file into individual lines and look at those. We need to remove this because the paranthesis and the links are no longer on the same line. Essentially, we will replace lines 68-70 with the contents of the method getLinksfromLine. After this, the code should theoretically work; however, it will keep the new lines, which need to be removed. So, after line 39, we will add\
+It didn't find any of the links. This is because we divide the file into individual lines and look at those. We need to remove this because the paranthesis and the links are no longer on the same line. Essentially, we will replace lines 68-70
+
+`for (String line : markdown.split("\n")) {`\
+`toReturn.addAll(getLinksFromLine(line));`\
+`}`\
+ with the contents of the method getLinksfromLine. After this, the code should theoretically work; however, it will keep the new lines, which need to be removed. So, after line 39, we will add\
 `while(markdown.indexOf(closeParen, closeParen - 1).contains("\n") || markdown.indexOf(closeParen, closeParen - 1).contains(' ')){`\
     `closeParen = closeParen - 1;`\
 `}`\
