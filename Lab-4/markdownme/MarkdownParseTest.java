@@ -118,7 +118,7 @@ public class MarkdownParseTest {
     {
         String contents = readFile("snippet-3.md");
         ArrayList<String> links = MarkdownParse.getLinks(contents);
-        ArrayList<String> Reallinks = new ArrayList<>(List.of("https://www.twitter.com","https://ucsd-cse15l-w22.github.io/","https://cse.ucsd.edu/"));
+        ArrayList<String> Reallinks = new ArrayList<>(List.of("https://www.twitter.com","https://ucsd-cse15l-w22.github.io/","github.com","https://cse.ucsd.edu/"));
         assertArrayEquals(Reallinks.toArray(),links.toArray());
     }
 }
