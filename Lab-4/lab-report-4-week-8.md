@@ -1,6 +1,6 @@
 What snippet1 should produce: ("url.com","'google.com'","google.com","ucsd.edu")\
 What snippet2 should produce: ("a.com","b.com","a.com(())","example.com")\
-What snippet3 should produce: ("https://www.twitter.com","https://ucsd-cse15l-w22.github.io/","https://cse.ucsd.edu/")
+What snippet3 should produce: ("https://www.twitter.com","https://ucsd-cse15l-w22.github.io/","github.com","https://cse.ucsd.edu/")
 
 
 ## My markdown parse:
@@ -33,7 +33,7 @@ Snippet 1 actually passed with my code. The code splits the passed file into ind
 
 ##### Question 2:
 It found a.com and example.com. This is because the code was triggered by the brackets and paranathesis within the brackets in the line with a.com and b.com; it found that link (a.com) but then didn't check for more links on that line and moved to the next line. Then, a.com(()) was completely skipped over because of the open paranthesis within the overall paranthesis `if (nextOpenParen != -1 && closeParen > nextOpenParen) {`; it checked for more links afterwards but still skipped over a.com(()). For finding b.com, we need to check after every single hard bracket. So, I would simply remove lines 30 to 33. Then, after line 39, where it checks for the paranthesis, I would have it look around those indexes for more paranthesis
- 
+
 `while(markdown.indexOf(closeParen, closeParen + 1).contains('(') || (markdown.indexOf(closeParen, closeParen + 1).contains(')')){`\
     `closeParen = closeParen + 1;`\
 `}`\
