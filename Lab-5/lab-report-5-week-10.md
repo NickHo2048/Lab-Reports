@@ -21,6 +21,7 @@ The other implemetation is incorrect because it returns url. This is because it 
 ### Test 2: [Test 500](https://github.com/ucsd-cse15l-w22/markdown-parse/blob/main/test-files/500.md)
 
 ![Output_Diff](500.png)
+
 I think my implementation was incorrect. Test 500 has the contents: [Link] (#fragment), [Link] (http://example.com#fragment), [Link] (http://example.com?foo=3#frag). *There were no spaces between the brackets and the paranthesis.* All of them should be valid links. They have the brackets and the paranthesis. The #fragment is likely a link to a repository or folder of some kind and does need a .com at the end to make it a valid link. Ultimately, my code failed to get #fragment and thus there was an error. 
 
 My implementation had a simple error. In the while loop of getlinks, there's an if statement that says the first open bracket must be greater than 0. It should be greater than or equal to zero. Because the first character in this test is the bracket, the if statement didn't run and include #fragment. A simple fix is just making the if statement '>= 0' because of course, the first character can be an open bracket. However, the open bracket cannot be nonexistent or negative. 
