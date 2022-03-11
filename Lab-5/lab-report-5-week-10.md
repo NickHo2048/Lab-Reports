@@ -7,7 +7,13 @@ For each of the versions of markdown parse, I created a script.sh file. It loops
 
 Then I typed `diff [insert location of results.txt] [insert location of other results.txt]`. This compared the contents of results.txt and returns the differences between the two files. 
 
-### Test 1
+### Test 1: [Test 194](https://github.com/ucsd-cse15l-w22/markdown-parse/blob/main/test-files/194.md)
 
+![Output_Diff](194.png)
 
-### Test 2
+I think my implementation was correct. Test 194 has the contents: Foo*bar]. I don't see any links, and thus, because my code return nothing at all, I think my implementation was correct. 
+
+### Test 2: [Test 500](https://github.com/ucsd-cse15l-w22/markdown-parse/blob/main/test-files/500.md)
+
+![Output_Diff](500.png)
+I think my implementation was incorrect. Test 500 has the contents: [Link] (#fragment), [Link] (http://example.com#fragment), [Link] (http://example.com?foo=3#frag). *There were no spaces between the brackets and the paranthesis.* All of them should be valid links. They have the brackets and the paranthesis. The #fragment is likely a link to a repository or folder of some kind and does need a .com at the end to make it a valid link. Ultimately, my code failed to get #fragment and thus there was an error. 
