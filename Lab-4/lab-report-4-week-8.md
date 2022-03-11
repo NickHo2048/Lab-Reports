@@ -4,7 +4,7 @@ What snippet3 should produce: ("https://www.twitter.com","https://ucsd-cse15l-w2
 
 
 ## My markdown parse:
-[**Link to My Repository**](markdownme)
+[**Link to My Repository**](https://github.com/NickHo2048/Lab-Reports/tree/main/Lab-4/markdownme)
 ##### Test for Snippet 1
 ![Test_for_snippet1](myrepo1.png) 
 ##### Test for Snippet 2
@@ -16,7 +16,7 @@ What snippet3 should produce: ("https://www.twitter.com","https://ucsd-cse15l-w2
 
 
 ## The reviewed markdown parse:
-[**Link to Reviewed Respository**](markdownthem)
+[**Link to Reviewed Respository**](https://github.com/NickHo2048/Lab-Reports/tree/main/Lab-4/markdownthem)
 ##### Test for Snippet 1
 ![Test_for_snippet1](therepo1.png) 
 ##### Test for Snippet 2
