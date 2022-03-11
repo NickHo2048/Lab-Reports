@@ -14,7 +14,7 @@ Then I typed `diff [insert location of results.txt] [insert location of other re
 
 ![Output_Diff](194.png)
 
-I think my implementation was correct. Test 194 has the contents: [Foo*bar\]]:my_(url) 'title (with parens)' and [Foo*bar\]]. I don't see any links, and thus, because my code return nothing at all, I think my implementation was correct. The contents do contain hard brackets and paranthesis; however, the paranthesis are separated from the brackets with several characters, leading me to believe it is not a link. 
+I think my implementation was correct. Test 194 has the contents: [Foo* bar\]]:my_(url) 'title (with parens)' and [Foo *bar\]]. *There were no spaces between the * and 'bar;' however, it made the code italicized.* I don't see any links, and thus, because my code return nothing at all, I think my implementation was correct. The contents do contain hard brackets and paranthesis; however, the paranthesis are separated from the brackets with several characters, leading me to believe it is not a link. 
 
 The other implemetation is incorrect because it returns url. This is because it does not check for the position of the hard brackets in relation to the paranthesis. It checks for the brackets; then, it checks for the paranthesis afterwards and returns its value assuming it found everything (there is a check for if one of the paranthesis or brackets does not appear but very little else). Consequently, it needs to check that the paranthesis come directly after the brackets. 
 
